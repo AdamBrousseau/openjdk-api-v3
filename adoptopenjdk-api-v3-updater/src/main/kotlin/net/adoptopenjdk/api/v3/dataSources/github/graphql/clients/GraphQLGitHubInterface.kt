@@ -28,7 +28,7 @@ abstract class GraphQLGitHubInterface(
         private val LOGGER = LoggerFactory.getLogger(this::class.java)
     }
 
-    protected val OWNER = "AdoptOpenJDK"
+    protected val OWNER = "AdamBrousseau"
 
     private val THRESHOLD_START = System.getenv("GITHUB_THRESHOLD")?.toFloatOrNull() ?: 1000f
     private val THRESHOLD_HARD_FLOOR = System.getenv("GITHUB_THRESHOLD_HARD_FLOOR")?.toFloatOrNull() ?: 200f
